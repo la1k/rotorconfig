@@ -1,0 +1,11 @@
+[Unit]
+Description=Launch rotctld instance for rotor %i in /usr/local/etc/rotors.conf
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/start-rotctld /usr/local/etc/rotors.conf %i
+Restart=always
+RestartSec=1min
+
+[Install]
+WantedBy=default.target

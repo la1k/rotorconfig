@@ -1,0 +1,11 @@
+[Unit]
+Description=Listens to rotor commands from N1MM and forwards these to the appropriate rotctld instance.
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/n1mm-rotctl /usr/local/etc/rotors.conf
+Restart=always
+RestartSec=1min
+
+[Install]
+WantedBy=default.target

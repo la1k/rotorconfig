@@ -1,0 +1,4 @@
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb-serial", ATTRS{port_number}=="0", SYMLINK+="tty_HFROT", GROUP="dialout"
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb-serial", ATTRS{port_number}=="1", SYMLINK+="tty_ROT2PROG", GROUP="dialout"
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb-serial", ATTRS{port_number}=="2", SYMLINK+="tty_MD-01", GROUP="dialout"
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb-serial", ATTRS{port_number}=="3", SYMLINK+="tty_4-6MROT", GROUP="dialout"
