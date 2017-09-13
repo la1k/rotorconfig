@@ -43,7 +43,9 @@ Each rotor is started as a separate systemd service, called rotctld@{rotorname}.
 In the above example, the service would be called rotctld@40m_80m-array.service.
 The n1mm receiver is started as n1mm-rotctl.service.
 
-Check whether there were any errors using journalctl.
+Check whether there were any errors using `systemctl status rotctld@*`.
+Convenience script `check_rotors.sh` can also be used to print rotor angles
+from all the rotors using rotctl.
 
 File/folder overview
 ====================
