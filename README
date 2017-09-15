@@ -1,3 +1,12 @@
+Overview
+========
+
+Configuration files and scripts for enabling simple setup of networked rotor
+control from Linux, for multiple rotors, and for enabling support for rotor
+control from specific Windows applications (i.e. N1MM).
+
+A description can be found at https://www.la1k.no/2017/09/15/unified-software-rotor-control-over-the-local-network/.
+
 Setup
 =====
 
